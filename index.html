@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Nguyễn Thị Thuỳ Duyên</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", Arial, sans-serif;
+        background: #19171d;
+        color: #fff;
+      }
+      .header {
+        width: 100vw;
+        background: linear-gradient(90deg, #fae1f6 0%, #c3eaf8 100%);
+        color: #363244;
+        text-align: center;
+        padding: 30px 0 10px 0;
+        box-shadow: 0 2px 20px #0002;
+        letter-spacing: 3px;
+        font-size: 1.5em;
+        font-weight: 800;
+      }
+      .main-title {
+        margin-top: 36px;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 3.2em;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 14px #eb9bf6cc;
+      }
+      .sub-title {
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 10px;
+        margin-bottom: 36px;
+        color: #b9ebf4;
+        font-weight: 500;
+      }
+      .avatar {
+        display: block;
+        margin: 0 auto 22px auto;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        background: #fff;
+        box-shadow: 0 4px 20px #ecabf755;
+        object-fit: cover;
+        transition: transform 0.18s;
+      }
+      .avatar:hover {
+        transform: scale(1.04) rotate(-3deg);
+        box-shadow: 0 8px 28px #ae53cdb2;
+      }
+      .section {
+        background: #24202b;
+        margin: 38px 0;
+        padding: 38px 0 32px 0;
+        border-radius: 22px;
+        width: 92vw;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 2px 40px #0002;
+        position: relative;
+      }
+      .section-title {
+        font-size: 2.3em;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ffe3fa 10%, #d6f8fc 100%);
+        color: #2e243c;
+        padding: 14px 0 14px 34px;
+        border-radius: 8px 26px 26px 8px;
+        margin-bottom: 22px;
+        margin-left: 0;
+        margin-right: 0;
+        box-shadow: 0 3px 10px #a5e3f244;
+        border-left: 5px solid #ee7ee2;
+        letter-spacing: 2px;
+        text-align: left;
+        width: 99%;
+      }
+      .about-info {
+        margin: 0 0 15px 0;
+        font-size: 1.18em;
+        line-height: 1.7;
+        text-align: center;
+        color: #f6e2fa;
+      }
+      .simple-list {
+        padding-left: 2.2em;
+        font-size: 1.07em;
+        color: #dbeaf8;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .simple-list li {
+        margin-bottom: 7px;
+      }
+      .caption {
+        background: linear-gradient(90deg, #f9e1f7 30%, #b6eaf5 100%);
+        color: #482c4b;
+        display: inline-block;
+        padding: 9px 22px;
+        border-radius: 11px;
+        font-size: 1em;
+        margin-top: 18px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        box-shadow: 0 2px 14px #a4e4f255;
+        margin-bottom: 8px;
+      }
+      .products-imgs {
+        text-align: center;
+      }
+      .products-imgs img {
+        width: 145px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 16px;
+        margin: 6px 12px 10px 12px;
+        border: 3px solid #fff;
+        box-shadow: 0 2px 18px #eed2f8aa;
+        transition: 0.16s;
+      }
+      .products-imgs img:hover {
+        transform: scale(1.05) rotate(-2deg);
+        border-color: #ee7ee2;
+        box-shadow: 0 2px 28px #ee7ee2aa;
+      }
+      /* Responsive: */
+      @media (max-width: 700px) {
+        .section {
+          width: 99vw;
+          padding: 17px 0 19px 0;
+        }
+        .section-title {
+          font-size: 1.2em;
+          padding-left: 14px;
+        }
+        .avatar {
+          width: 96px;
+          height: 96px;
+        }
+        .main-title {
+          font-size: 2em;
+        }
+        .sub-title {
+          font-size: 1em;
+        }
+        .products-imgs img {
+          width: 90px;
+          height: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">PORTFOLIO</div>
+
+    <!-- HERO -->
+    <div class="main-title">Nguyễn Thị Thuỳ Duyên</div>
+    <div class="sub-title">
+      Sinh viên thiết kế | Yêu sáng tạo | Đam mê cái đẹp
+    </div>
+
+    <!-- GIỚI THIỆU -->
+    <div class="section">
+      <div class="section-title">Giới thiệu bản thân</div>
+      <img
+        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=400&h=400&facepad=2&q=80"
+        alt="Avatar của Duyên"
+        class="avatar"
+      />
+      <div class="about-info">
+        Xin chào, mình là <b>Nguyễn Thị Thuỳ Duyên</b> – một sinh viên đam mê
+        thiết kế đồ họa.<br />
+        Mình thích kể chuyện bằng hình ảnh, muốn mọi thứ trở nên tươi vui và
+        sáng tạo hơn!
+      </div>
+      <div style="text-align: center">
+        <b>Ngày sinh:</b> 22/08/2005 &nbsp; | &nbsp; <b>Trường:</b> THPT Nguyễn
+        Trãi
+      </div>
+    </div>
+
+    <!-- KỸ NĂNG -->
+    <div class="section">
+      <div class="section-title">Kỹ năng</div>
+      <ul class="simple-list">
+        <li>Thiết kế poster & banner</li>
+        <li>Chỉnh sửa ảnh cơ bản</li>
+        <li>Trình bày slide đẹp</li>
+        <li>Làm việc nhóm, giao tiếp tốt</li>
+      </ul>
+      <div class="caption">Luôn muốn học hỏi thêm nhiều điều mới!</div>
+    </div>
+
+    <!-- PHẦN MỀM BIẾT DÙNG -->
+    <div class="section">
+      <div class="section-title">Phần mềm sử dụng</div>
+      <ul class="simple-list">
+        <li>Canva</li>
+        <li>PowerPoint</li>
+        <li>Paint</li>
+        <li>Một chút Photoshop</li>
+      </ul>
+    </div>
+
+    <!-- SẢN PHẨM ĐƠN GIẢN -->
+    <div class="section">
+      <div class="section-title">Một vài sản phẩm</div>
+      <div class="products-imgs">
+        <img
+          src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+          alt="Poster mẫu"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+          alt="Ảnh thiết kế"
+        />
+      </div>
+      <div class="caption">Tất cả đều là trải nghiệm đầu tay!</div>
+    </div>
+
+    <!-- LỜI CẢM ƠN -->
+    <div class="section" style="text-align: center">
+      <div class="section-title" style="text-align: center">
+        Cảm ơn đã xem Portfolio của mình!
+      </div>
+      <div style="margin-top: 10px; font-size: 1.2em; color: #f5d6f7">
+        Hẹn gặp lại ở những bài thiết kế sau nhé 💖
+      </div>
+    </div>
+  </body>
+</html>
