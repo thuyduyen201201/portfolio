@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
     <title>Portfolio Nguyễn Thị Thuỳ Duyên</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./aos.css" rel="stylesheet" />
     <style>
       body {
         margin: 0;
@@ -92,16 +94,6 @@
         text-align: center;
         color: #f6e2fa;
       }
-      .simple-list {
-        padding-left: 2.2em;
-        font-size: 1.07em;
-        color: #dbeaf8;
-        margin-bottom: 0;
-        margin-top: 0;
-      }
-      .simple-list li {
-        margin-bottom: 7px;
-      }
       .caption {
         background: linear-gradient(90deg, #f9e1f7 30%, #b6eaf5 100%);
         color: #482c4b;
@@ -114,6 +106,16 @@
         letter-spacing: 0.8px;
         box-shadow: 0 2px 14px #a4e4f255;
         margin-bottom: 8px;
+      }
+      .simple-list {
+        padding-left: 2.2em;
+        font-size: 1.07em;
+        color: #dbeaf8;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .simple-list li {
+        margin-bottom: 7px;
       }
       .products-imgs {
         text-align: center;
@@ -133,7 +135,32 @@
         border-color: #ee7ee2;
         box-shadow: 0 2px 28px #ee7ee2aa;
       }
-      /* Responsive: */
+      .progress-bar {
+        background-color: #3a3842;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 12px;
+        margin: 10px 32px 20px;
+        box-shadow: inset 0 1px 3px #00000055;
+      }
+      .progress {
+        height: 100%;
+        background: linear-gradient(to right, #ee7ee2, #9adcf2);
+        width: 0;
+        border-radius: 10px;
+        position: relative;
+        transition: width 1.2s ease-out;
+      }
+      .progress-label {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 0.85em;
+        font-weight: 600;
+      }
+
       @media (max-width: 700px) {
         .section {
           width: 99vw;
@@ -161,23 +188,15 @@
     </style>
   </head>
   <body>
-    <!-- HEADER -->
     <div class="header">PORTFOLIO</div>
-
-    <!-- HERO -->
     <div class="main-title">Nguyễn Thị Thuỳ Duyên</div>
     <div class="sub-title">
       Sinh viên thiết kế | Yêu sáng tạo | Đam mê cái đẹp
     </div>
 
-    <!-- GIỚI THIỆU -->
     <div class="section">
       <div class="section-title">Giới thiệu bản thân</div>
-      <img
-        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=400&h=400&facepad=2&q=80"
-        alt="Avatar của Duyên"
-        class="avatar"
-      />
+      <img class="avatar" src="./avatar.jpg" alt="Avatar của Duyên" />
       <div class="about-info">
         Xin chào, mình là <b>Nguyễn Thị Thuỳ Duyên</b> – một sinh viên đam mê
         thiết kế đồ họa.<br />
@@ -185,58 +204,103 @@
         sáng tạo hơn!
       </div>
       <div style="text-align: center">
-        <b>Ngày sinh:</b> 22/08/2005 &nbsp; | &nbsp; <b>Trường:</b> THPT Nguyễn
-        Trãi
+        <b>Ngày sinh:</b> 20/12/2001 &nbsp; | &nbsp; <b>Trường:</b> Đại học Văn
+        Lang
       </div>
     </div>
 
-    <!-- KỸ NĂNG -->
-    <div class="section">
+    <div class="section" id="skills">
       <div class="section-title">Kỹ năng</div>
-      <ul class="simple-list">
-        <li>Thiết kế poster & banner</li>
-        <li>Chỉnh sửa ảnh cơ bản</li>
-        <li>Trình bày slide đẹp</li>
-        <li>Làm việc nhóm, giao tiếp tốt</li>
-      </ul>
+      <div class="simple-list">
+        <div>Thiết kế poster &amp; banner</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="85" style="width: 85%">
+            <span class="progress-label">85%</span>
+          </div>
+        </div>
+
+        <div>Chỉnh sửa ảnh cơ bản</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="70" style="width: 70%">
+            <span class="progress-label">70%</span>
+          </div>
+        </div>
+
+        <div>Trình bày slide đẹp</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="80" style="width: 80%">
+            <span class="progress-label">80%</span>
+          </div>
+        </div>
+
+        <div>Làm việc nhóm, giao tiếp tốt</div>
+        <div class="progress-bar">
+          <div class="progress" data-percent="90" style="width: 90%">
+            <span class="progress-label">90%</span>
+          </div>
+        </div>
+      </div>
       <div class="caption">Luôn muốn học hỏi thêm nhiều điều mới!</div>
     </div>
 
-    <!-- PHẦN MỀM BIẾT DÙNG -->
     <div class="section">
       <div class="section-title">Phần mềm sử dụng</div>
       <ul class="simple-list">
         <li>Canva</li>
         <li>PowerPoint</li>
         <li>Paint</li>
-        <li>Một chút Photoshop</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe Indesign</li>
+        <li>Adobe Dreamweaver</li>
       </ul>
     </div>
 
-    <!-- SẢN PHẨM ĐƠN GIẢN -->
     <div class="section">
       <div class="section-title">Một vài sản phẩm</div>
       <div class="products-imgs">
-        <img
-          src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
-          alt="Poster mẫu"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
-          alt="Ảnh thiết kế"
-        />
+        <img src="./mockupdoan.jpg" alt="Poster mẫu" />
+        <img src="./mockupids.jpg" alt="Ảnh thiết kế" />
+        <img src="./mockupspa.jpg" alt="Ảnh thiết kế" />
       </div>
       <div class="caption">Tất cả đều là trải nghiệm đầu tay!</div>
     </div>
 
-    <!-- LỜI CẢM ƠN -->
     <div class="section" style="text-align: center">
-      <div class="section-title" style="text-align: center">
-        Cảm ơn đã xem Portfolio của mình!
-      </div>
+      <div class="section-title">Cảm ơn đã xem Portfolio của mình!</div>
       <div style="margin-top: 10px; font-size: 1.2em; color: #f5d6f7">
         Hẹn gặp lại ở những bài thiết kế sau nhé 💖
       </div>
     </div>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const progressBars = document.querySelectorAll(".progress");
+              progressBars.forEach((bar) => {
+                const percent = +bar.dataset.percent;
+                bar.style.width = percent + "%";
+
+                const label = bar.querySelector(".progress-label");
+                let count = 0;
+                const timer = setInterval(() => {
+                  if (count <= percent) {
+                    label.textContent = count + "%";
+                    count++;
+                  } else {
+                    clearInterval(timer);
+                  }
+                }, 20);
+              });
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      observer.observe(document.getElementById("skills"));
+    </script>
   </body>
 </html>
